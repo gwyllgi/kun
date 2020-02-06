@@ -1,27 +1,50 @@
 VERSION 5.00
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Object = "{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCT2.OCX"
+Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Begin VB.Form Form1 
    BackColor       =   &H00FF0000&
    Caption         =   "Form1"
    ClientHeight    =   7245
-   ClientLeft      =   120
-   ClientTop       =   465
-   ClientWidth     =   13905
+   ClientLeft      =   165
+   ClientTop       =   555
+   ClientWidth     =   14565
    LinkTopic       =   "Form1"
    ScaleHeight     =   7245
-   ScaleWidth      =   13905
+   ScaleWidth      =   14565
    StartUpPosition =   3  'Windows Default
-   Begin MSDataGridLib.DataGrid DataGrid1 
-      Height          =   1455
-      Left            =   600
+   Begin MSComCtl2.DTPicker DTPicker2 
+      Height          =   375
+      Left            =   8880
       TabIndex        =   23
-      Top             =   5400
-      Width           =   12495
-      _ExtentX        =   22040
-      _ExtentY        =   2566
+      Top             =   360
+      Width           =   1935
+      _ExtentX        =   3413
+      _ExtentY        =   661
       _Version        =   393216
-      BackColor       =   16776960
+      Format          =   7667713
+      CurrentDate     =   43867
+   End
+   Begin MSComCtl2.DTPicker DTPicker1 
+      Height          =   375
+      Left            =   2640
+      TabIndex        =   22
+      Top             =   2160
+      Width           =   2175
+      _ExtentX        =   3836
+      _ExtentY        =   661
+      _Version        =   393216
+      Format          =   7667713
+      CurrentDate     =   43867
+   End
+   Begin MSDataGridLib.DataGrid DataGrid1 
+      Height          =   1695
+      Left            =   600
+      TabIndex        =   21
+      Top             =   5520
+      Width           =   13215
+      _ExtentX        =   23310
+      _ExtentY        =   2990
+      _Version        =   393216
       HeadLines       =   1
       RowHeight       =   15
       BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -52,7 +75,7 @@ Begin VB.Form Form1
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
-            LCID            =   1057
+            LCID            =   1033
             SubFormatType   =   0
          EndProperty
       EndProperty
@@ -65,7 +88,7 @@ Begin VB.Form Form1
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
-            LCID            =   1057
+            LCID            =   1033
             SubFormatType   =   0
          EndProperty
       EndProperty
@@ -83,14 +106,14 @@ Begin VB.Form Form1
          Name            =   "Arial Black"
          Size            =   9.75
          Charset         =   0
-         Weight          =   900
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
       Left            =   11760
-      TabIndex        =   22
+      TabIndex        =   20
       Top             =   4200
       Width           =   975
    End
@@ -100,14 +123,14 @@ Begin VB.Form Form1
          Name            =   "Arial Black"
          Size            =   9.75
          Charset         =   0
-         Weight          =   900
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
       Left            =   10320
-      TabIndex        =   21
+      TabIndex        =   19
       Top             =   4200
       Width           =   975
    End
@@ -117,14 +140,14 @@ Begin VB.Form Form1
          Name            =   "Arial Black"
          Size            =   9.75
          Charset         =   0
-         Weight          =   900
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
       Left            =   8880
-      TabIndex        =   20
+      TabIndex        =   18
       Top             =   4200
       Width           =   975
    End
@@ -134,14 +157,14 @@ Begin VB.Form Form1
          Name            =   "Arial Black"
          Size            =   9.75
          Charset         =   0
-         Weight          =   900
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
       Left            =   7440
-      TabIndex        =   19
+      TabIndex        =   17
       Top             =   4200
       Width           =   975
    End
@@ -151,14 +174,14 @@ Begin VB.Form Form1
          Name            =   "Arial Black"
          Size            =   9.75
          Charset         =   0
-         Weight          =   900
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   615
       Left            =   6000
-      TabIndex        =   18
+      TabIndex        =   16
       Top             =   4200
       Width           =   975
    End
@@ -167,7 +190,7 @@ Begin VB.Form Form1
       ItemData        =   "Form1.frx":0000
       Left            =   2640
       List            =   "Form1.frx":0013
-      TabIndex        =   17
+      TabIndex        =   15
       Top             =   3360
       Width           =   2175
    End
@@ -176,33 +199,9 @@ Begin VB.Form Form1
       ItemData        =   "Form1.frx":003E
       Left            =   2640
       List            =   "Form1.frx":0048
-      TabIndex        =   16
+      TabIndex        =   14
       Top             =   2760
       Width           =   2175
-   End
-   Begin MSComCtl2.DTPicker DTPicker2 
-      Height          =   375
-      Left            =   9240
-      TabIndex        =   15
-      Top             =   360
-      Width           =   2295
-      _ExtentX        =   4048
-      _ExtentY        =   661
-      _Version        =   393216
-      Format          =   108003329
-      CurrentDate     =   43866
-   End
-   Begin MSComCtl2.DTPicker DTPicker1 
-      Height          =   375
-      Left            =   2640
-      TabIndex        =   14
-      Top             =   2160
-      Width           =   2175
-      _ExtentX        =   3836
-      _ExtentY        =   661
-      _Version        =   393216
-      Format          =   108003329
-      CurrentDate     =   43866
    End
    Begin VB.TextBox Text5 
       Height          =   405
@@ -421,7 +420,7 @@ End Sub
 
 Private Sub Command3_Click()
 Set koneksirecord = New ADODB.Recordset
-Update = "update kunana set Nama='" & Text2 & "',Tempat_Lahir='" & Text3 & "',Tanggal_Lahir='" & DTPicker1 & "',Jenis_Kelamin='" & Combo1 & "',agama='" & Combo2 & "',NoHp='" & Text4 & "',Aktif_Sampai='" & DTPicker2 & "' where NIS='" & Text1 & "'"
+Update = "update kunana set Nama='" & Text2 & "',Tempat_Lahir='" & Text3 & "',Tanggal_Lahir='" & DTPicker1 & "',Jenis_Kelamin='" & Combo1 & "',Agama='" & Combo2 & "',Alamat='" & Text4 & "',NoHp='" & Text5 & "',Aktif_Sampai='" & DTPicker2 & "' where NIS='" & Text1 & "'"
 koneksi.Execute Update
 MsgBox "Data Berhasil Diubah"
 Call KondisiAwal
